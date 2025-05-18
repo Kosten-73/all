@@ -1,0 +1,14 @@
+### templates/testapp/results.html
+<h2>Результаты</h2>
+<table border="1">
+  <tr>
+    <th>Пользователь</th>
+    <th>Правильных ответов</th>
+  </tr>
+  {% for item in data %}
+  <tr>
+    <td>{{ item.username }}</td>
+    <td>{{ item.correct }}</td>
+  </tr>
+  {% endfor %}
+</table>

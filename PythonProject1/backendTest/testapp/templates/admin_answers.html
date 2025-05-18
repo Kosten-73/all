@@ -1,0 +1,18 @@
+### templates/testapp/admin_answers.html
+<h2>Все ответы пользователей</h2>
+<table border="1">
+  <tr>
+    <th>Пользователь</th>
+    <th>Вопрос</th>
+    <th>Ответ</th>
+    <th>Правильно?</th>
+  </tr>
+  {% for a in answers %}
+  <tr>
+    <td>{{ a.user.username }}</td>
+    <td>{{ a.question.text }}</td>
+    <td>{{ a.answer }}</td>
+    <td>{{ a.is_correct }}</td>
+  </tr>
+  {% endfor %}
+</table>

@@ -1,0 +1,6 @@
+### templates/testapp/test.html
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Отправить</button>
+</form>
