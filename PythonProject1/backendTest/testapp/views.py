@@ -3,6 +3,8 @@ from django.shortcuts import render, redirect
 from .models import Question, UserAnswer
 from .forms import TestForm
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth import get_user_model
+
 
 @login_required
 def test_view(request):
@@ -20,25 +22,24 @@ def test_view(request):
             return redirect('results')
     else:
         form = TestForm(questions=questions)
-    return render(request, 'testapp/test.html', {'form': form})
+    return render(request, 'test.html', {'form': form})
 
 @login_required
 def results_view(request):
-    from django.db.models import Count, Q
-    from django.contrib.auth.models import User
-
-    users = User.objects.all()
+    User = get_user_model()
+    users = User.objects.all()  # ← добавили это, чтобы получить всех пользователей
     data = []
     for user in users:
         answers = UserAnswer.objects.filter(user=user)
-        correct = sum(1 for a in answers if a.is_correct())
+        correct = sum(1 for a in answers if a.is_correct())  # is_correct должен быть методом модели
         data.append({'username': user.username, 'correct': correct})
-    return render(request, 'testapp/results.html', {'data': data})
+    return render(request, 'results.html', {'data': data})
+
 
 @login_required
 def admin_answers_view(request):
     if not request.user.is_superuser:
         return redirect('test')
     answers = UserAnswer.objects.select_related('user', 'question')
-    return render(request, 'testapp/admin_answers.html', {'answers': answers})
+    return render(request, 'admin_answers.html', {'answers': answers})
 

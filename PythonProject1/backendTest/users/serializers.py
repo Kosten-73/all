@@ -1,8 +1,8 @@
-# serializers.py
+
 from django.contrib.auth.models import User
 from rest_framework import serializers
+from rest_framework.exceptions import AuthenticationFailed
 
-# Сериализатор для регистрации пользователя
 class RegisterSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True)
 
@@ -17,10 +17,6 @@ class RegisterSerializer(serializers.ModelSerializer):
         )
         return user
 
-
-# Сериализатор для логина пользователя
-from rest_framework.authentication import BasicAuthentication
-from rest_framework.exceptions import AuthenticationFailed
 
 class LoginSerializer(serializers.Serializer):
     username = serializers.CharField()

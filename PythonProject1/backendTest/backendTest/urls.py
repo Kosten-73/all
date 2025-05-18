@@ -16,10 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.contrib.auth import views as auth_views
 
 # backendTest/urls.py
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/users/', include('users.urls')),   # <--- добавлен префикс api/users/
-    path('test/', include('testapp.urls'))
+    path('api/users/', include('users.urls')),
+    path('test/', include('testapp.urls')),
 ]

@@ -1,6 +1,14 @@
-### templates/testapp/test.html
-<form method="post">
-  {% csrf_token %}
-  {{ form.as_p }}
-  <button type="submit">Отправить</button>
-</form>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Физический тест</title>
+</head>
+<body>
+    <h1>Ответьте на вопрос по физике</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">ответить</button>
+    </form>
+</body>
+</html>

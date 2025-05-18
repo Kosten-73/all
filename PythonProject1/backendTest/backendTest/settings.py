@@ -136,3 +136,6 @@ REST_FRAMEWORK = {
 }
 
 LOGIN_REDIRECT_URL = '/test/'
+
+SESSION_COOKIE_SECURE = False  # если локально без https
+CSRF_COOKIE_SECURE = False     # если локально без https

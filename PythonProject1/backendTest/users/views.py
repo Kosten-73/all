@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login
+from django.views.decorators.csrf import csrf_exempt
 from .forms import CustomUserCreationForm, LoginForm
 from django.contrib import messages
 
@@ -16,6 +17,7 @@ def register_view(request):
 
 
 # Вход пользователя
+@csrf_exempt
 def login_view(request):
     error_message = None
 
