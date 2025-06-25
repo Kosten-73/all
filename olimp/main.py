@@ -9,7 +9,7 @@ def is_number(s):
         return False
 
 # Откройте файл в бинарном режиме
-with open('resu.pdf', 'rb') as file:
+with open('resu4.pdf', 'rb') as file:
     reader = PyPDF2.PdfReader(file)
     k = 0
     mas = []
