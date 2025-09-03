@@ -1,0 +1,5 @@
+numpy==1.19.0 
+pandas
+scipy  
+scikit-learn
+tensorflow==1.15.5
