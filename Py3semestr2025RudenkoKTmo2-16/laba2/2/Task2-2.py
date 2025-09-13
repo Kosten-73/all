@@ -69,7 +69,7 @@ for book_i in range(len(db)):
 # --------------
 # Пример вывода:
 # --------------
-# C:\Users\korudenko\PycharmProjects\Py3semestr2025RudenkoKTmo2-16\.venv\Scripts\python.exe C:\Users\korudenko\PycharmProjects\Py3semestr2025RudenkoKTmo2-16\laba2\Part2.py
+# C:\Users\korudenko\PycharmProjects\Py3semestr2025RudenkoKTmo2-16\.venv\Scripts\python.exe C:\Users\korudenko\PycharmProjects\Py3semestr2025RudenkoKTmo2-16\laba2\Task2-2.py
 # Содержимое базы данных книжного магазина (5 книги):
 # 1.
 # Название: Мастер и Маргарита
