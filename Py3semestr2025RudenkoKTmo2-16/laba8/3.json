@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Cheyanne King",
+    "phoneNumber": "706-743-4286",
+    "email": "okey.huels@halvorson.biz",
+    "address": "93501 Celia Cliffs\nNorth Felipa, NJ 89608-7380",
+    "userAgent": "Mozilla/5.0 (compatible; MSIE 6.0; Windows NT 6.1; Trident/5.1)",
+    "hexcolor": "#baf759"
+  },
+  {
+    "name": "Charlotte Howell",
+    "phoneNumber": "(232) 531-6769",
+    "email": "watson.reichert@gmail.com",
+    "address": "5222 Hayes Plains Suite 017\nZolaland, IN 26618",
+    "userAgent": "Opera/9.22 (X11; Linux i686; en-US) Presto/2.12.165 Version/10.00",
+    "hexcolor": "#3522dd"
+  },
+  {
+    "name": "Jayce Mosciski",
+    "phoneNumber": "+1 (652) 445-4432",
+    "email": "hreichel@oconnell.info",
+    "address": "85756 Klocko Freeway Suite 262\nNorth Aubree, TN 78188-3175",
+    "userAgent": "Mozilla/5.0 (compatible; MSIE 5.0; Windows NT 5.2; Trident/5.1)",
+    "hexcolor": "#ca5c70"
+  },
+  {
+    "name": "Savanah Senger MD",
+    "phoneNumber": "1-518-555-0485",
+    "email": "edmond.kessler@yahoo.com",
+    "address": "340 Stracke Inlet Apt. 249\nVerdieshire, MD 64247-5523",
+    "userAgent": "Mozilla/5.0 (compatible; MSIE 11.0; Windows 98; Win 9x 4.90; Trident/4.1)",
+    "hexcolor": "#ab2426"
+  },
+  {
+    "name": "Ms. Jackeline Greenfelder",
+    "phoneNumber": "369.971.9444",
+    "email": "gjohns@west.info",
+    "address": "907 Edwin Centers\nNathenton, MA 90494-5857",
+    "userAgent": "Opera/9.62 (X11; Linux i686; sl-SI) Presto/2.9.332 Version/11.00",
+    "hexcolor": "#dc7cfa"
+  },
+  {
+    "name": "Mr. Patrick Wolff",
+    "phoneNumber": "+1-713-473-8390",
+    "email": "rhill@torphy.com",
+    "address": "28900 Schneider Meadows Suite 887\nSouth Audie, LA 89682",
+    "userAgent": "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 5.1; Trident/3.1)",
+    "hexcolor": "#d6453e"
+  },
+  {
+    "name": "Antonetta Abernathy",
+    "phoneNumber": "640-908-9055",
+    "email": "van.kub@bechtelar.com",
+    "address": "231 Everett Walk\nPort Rosie, MD 19992",
+    "userAgent": "Mozilla/5.0 (compatible; MSIE 9.0; Windows 98; Trident/4.0)",
+    "hexcolor": "#2dfb07"
+  },
+  {
+    "name": "Devon Herman",
+    "phoneNumber": "(617) 549-1567",
+    "email": "makenzie77@stehr.com",
+    "address": "714 Maurice Ports\nBarrowshaven, WI 38540",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:7.0) Gecko/20171123 Firefox/36.0",
+    "hexcolor": "#f66761"
+  },
+  {
+    "name": "Aditya Waelchi",
+    "phoneNumber": "1-339-691-2640",
+    "email": "diego97@gmail.com",
+    "address": "9477 Eleazar Glen\nNew Majorborough, NV 25526",
+    "userAgent": "Mozilla/5.0 (Windows; U; Windows NT 5.0) AppleWebKit/534.48.1 (KHTML, like Gecko) Version/4.0 Safari/534.48.1",
+    "hexcolor": "#e8e060"
+  }
+]

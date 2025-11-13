@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Nona Lang",
+    "phoneNumber": "+1.618.268.9358",
+    "email": "becker.wilfredo@mckenzie.biz",
+    "address": "77007 Cummings Springs\nIsmaelhaven, NC 14927",
+    "userAgent": "Opera/9.57 (X11; Linux x86_64; sl-SI) Presto/2.9.286 Version/12.00",
+    "hexcolor": "#2e5ce9"
+  },
+  {
+    "name": "Mrs. Britney Steuber",
+    "phoneNumber": "323-335-3534",
+    "email": "mabel.spencer@feil.com",
+    "address": "2908 Wisozk View\nPort Rhiannonmouth, NH 17260",
+    "userAgent": "Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_7_8) AppleWebKit/5332 (KHTML, like Gecko) Chrome/38.0.891.0 Mobile Safari/5332",
+    "hexcolor": "#e2ac2b"
+  },
+  {
+    "name": "Warren Schuster",
+    "phoneNumber": "(636) 385-7987",
+    "email": "salma81@yahoo.com",
+    "address": "5586 Cory Heights Apt. 454\nNorth Noahside, GA 05538",
+    "userAgent": "Mozilla/5.0 (Macintosh; PPC Mac OS X 10_5_1) AppleWebKit/5332 (KHTML, like Gecko) Chrome/39.0.897.0 Mobile Safari/5332",
+    "hexcolor": "#c37b18"
+  },
+  {
+    "name": "Prof. Juana Considine II",
+    "phoneNumber": "270-276-2918",
+    "email": "lindsay80@gmail.com",
+    "address": "17979 Richie Canyon\nLake Emanuelbury, VT 70478-6063",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:5.0) Gecko/20190830 Firefox/37.0",
+    "hexcolor": "#31ab47"
+  }
+]
