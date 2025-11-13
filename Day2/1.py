@@ -63,14 +63,42 @@ def task5_3():
         if N > 553:
             return N
 
+# картинка "задача 5 из егэ 4"
+def task5_4():
+    for n in range(1, 300):
+        n2 = bin(n)[2:]
+        if n2.count("1") % 2 == 0:
+            n2 = "1" + n2
+        else:
+            n2 += "0"
+        # print(f"1 Число: {n}, После if: {n2}")
+        # n2 += str(n2.count("1") % 2)
+        # print(f"2 Число: {n}, После if: {n2}")
+        R = int(n2, 2)
+        if R > 300:
+            return R
 
+# картинка "задача 5 из егэ 5"
+def task5_5():
+    for n in range(1, 300):
+        n2 = bin(n)[2:]
+        if n % 2 == 0:
+            n2 = "1" + n2 + "10"
+        else:
+            n2 = "11" + n2 + "0"
+        R = int(n2, 2)
+        if R > 100:
+            return R
 
-
-
-
-print(task5_3())
-
-print(True)
-print(int(True))
-print(int(False))
+# print(task5_3())
+#
+# print(True)
+# print(int(True))
+# print(int(False))
 #now = "123456789"
+
+
+# print(bin(123)[2:])
+# print(int(bin(123)[2:]) % 10)
+# print(bin(123)[2:][-1])
+print(task5_5())
