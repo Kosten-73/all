@@ -6,7 +6,6 @@ import tkinter as tk
 from tkinter import ttk
 
 
-# Чтение данных через модуль csv
 def read_csv_data(filename):
     data = []
     with open(filename, 'r', encoding='utf-8') as file:
@@ -27,22 +26,16 @@ def read_csv_data(filename):
 
 def create_underachievers_csv():
     try:
-        # Чтение исходного файла
         with open("birth_and_death_2017.csv", 'r', encoding='utf-8') as file:
             csv_reader = csv.reader(file)
             headers = next(csv_reader)
             data = list(csv_reader)
-
-        # Добавляем новый столбец к заголовкам
         headers.append("Примечание")
-
-        # Запись в новый файл с указанными параметрами
         with open("underachievers.csv", 'w', encoding='utf-8', newline='') as file:
             csv_writer = csv.writer(file, delimiter=';', lineterminator='\n')
             csv_writer.writerow(headers)
 
             for row in data:
-                # Добавляем примечание к каждой строке
                 row.append("Требует доработки по Python")
                 csv_writer.writerow(row)
 
@@ -54,10 +47,8 @@ def create_underachievers_csv():
         print(f"Произошла ошибка: {e}")
 
 
-# Создаем дополнительный CSV файл
 create_underachievers_csv()
 
-# Читаем данные для графика
 df = read_csv_data("birth_and_death_2017.csv")
 
 years = sorted(df["Год"].unique())
@@ -81,16 +72,14 @@ type_combo.set("Все")
 type_combo.pack(side=tk.LEFT, padx=5)
 
 selected_years = {year: tk.BooleanVar(value=True) for year in years}
-canvas = None  # для хранения текущего графика
+canvas = None
 
 
 def plot_graph():
     global canvas
     if canvas:
         canvas.get_tk_widget().destroy()
-
     fig, ax = plt.subplots(figsize=(8, 5))
-
     selection = type_combo.get()
     active_years = [year for year, var in selected_years.items() if var.get()]
 
@@ -99,11 +88,9 @@ def plot_graph():
         ax.axis("off")
     else:
         data = df[df["Год"].isin(active_years)]
-
         if selection == "Все":
             city = data[data["Тип"] == "Городское"]
             rural = data[data["Тип"] == "Сельское"]
-
             ax.plot(city["Год"], city["Родилось"], color="blue", label="Родилось (Городское)")
             ax.plot(city["Год"], city["Умерло"], color="orange", label="Умерло (Городское)")
             ax.plot(rural["Год"], rural["Родилось"], color="blue", linestyle="--", label="Родилось (Сельское)")
@@ -112,7 +99,6 @@ def plot_graph():
             data = data[data["Тип"] == selection]
             ax.plot(data["Год"], data["Родилось"], color="blue", label="Родилось")
             ax.plot(data["Год"], data["Умерло"], color="orange", label="Умерло")
-
         ax.set_xlabel("Год")
         ax.set_ylabel("Человек")
         ax.set_title(f"Демографические данные: {selection.lower()}")
@@ -132,7 +118,6 @@ for i, year in enumerate(years):
     cb = tk.Checkbutton(check_frame, text=str(year), variable=selected_years[year],
                         command=toggle_year)
     cb.grid(row=i // 3, column=i % 3, sticky="w")
-
 btn = tk.Button(top_frame, text="Обновить график", command=plot_graph)
 btn.pack(side=tk.LEFT, padx=10)
 
