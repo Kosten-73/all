@@ -7,7 +7,7 @@ left(90)
 right(60)
 pendown()
 begin_fill()
-for i in range(2):
+for _ in range(2):
     forward(10 * k)
     right(120)
     forward(5 * k)
@@ -15,15 +15,17 @@ for i in range(2):
 right(120)
 forward(3 * k)
 right(90)
-forward(k * sqrt(1200))
+forward(k * 20 * sqrt(3))
 right(90)
 forward(8 * k)
 right(120)
-for i in range(2):
+s = 0
+while s < 2:
     forward(10 * k)
     left(120)
     forward(5 * k)
     left(240)
+    s += 1
 end_fill()
 penup()
 

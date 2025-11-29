@@ -1,11 +1,12 @@
 from turtle import *
 
-tracer(0)
-k = 100
+# tracer(0)
+speed(10)
+k = 3
 left(90)
 pendown()
 begin_fill()
-for i in range(2):
+for i in range(10):
     right(90)
     forward(120 * k)
     right(90)
