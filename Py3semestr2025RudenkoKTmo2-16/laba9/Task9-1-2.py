@@ -127,7 +127,7 @@ if __name__ == "__main__":
     scraped = scrape_pages(START_PAGES)
     save_to_csv(scraped, OUTPUT_CSV)
 
-# C:\Users\korudenko\PycharmProjects\botconfectioner\.venv2\Scripts\python.exe C:\Users\korudenko\PycharmProjects\Py3semestr2025RudenkoKTmo2-16\laba9\Task9-2.py
+# C:\Users\korudenko\PycharmProjects\botconfectioner\.venv2\Scripts\python.exe C:\Users\korudenko\PycharmProjects\Py3semestr2025RudenkoKTmo2-16\laba9\Task9-1-2.py
 # [ИНФОРМАЦИЯ] обновляется https://books.toscrape.com/catalogue/page-1.html
 # [ИНФОРМАЦИЯ] обновляется https://books.toscrape.com/catalogue/page-2.html
 # [ИНФОРМАЦИЯ] обновляется https://books.toscrape.com/catalogue/page-3.html
