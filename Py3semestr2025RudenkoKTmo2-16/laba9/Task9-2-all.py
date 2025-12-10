@@ -116,7 +116,6 @@ for user_id, data in users_info.items():
 
 print(stats)
 
-
 # C:\Users\korudenko\AppData\Local\Programs\Python\Python312\python.exe C:\Users\korudenko\PycharmProjects\Py3semestr2025RudenkoKTmo2-16\laba9\Task9-2-all.py
 # {'post_id': 1675, 'age': {'0-18': 0, '19-35': 5, '36-50': 1, '>50': 0, 'unknown': 4}, 'sex': {'male': 7, 'female': 3, 'unknown': 0}}
 #
