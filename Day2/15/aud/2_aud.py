@@ -4,8 +4,10 @@ def DEL(n, m):
 
 for A in range(1, 1000):
     for x in range(1, 1000):
-        if not (((DEL(x, 2) <= (not (DEL(x, 3))) or (x + A >= 100)))):
+        # (False -> (False -> True) <=> True
+        if not ((not DEL(x, A)) <= (DEL(x, 6) <= (not DEL(x, 9)))):
             break
     else:
         print(A)
-        break
+
+print(DEL(1, 6))
