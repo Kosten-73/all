@@ -3,8 +3,20 @@
 # print(hex(52)[2:]) # в 16 сс
 # print(int("10110", 2))
 # print(int("AA", 16))
-# print(int("AA", 37))
-#
+# print(int("AA", 36))
+
+
+
+
+
+
+
+
+
+
+
+
+
 def perevodCC(x, cc):
     out = ""
     while x > 0:
