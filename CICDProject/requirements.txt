@@ -1,0 +1,6 @@
+requests
+PyGithub
+python-dotenv
+jira
+atlassian-python-api
+semver

@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+
+  app:
+    build: ./microservices/spring-demo-service
+    ports:
+      - "8080:8080"
+
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_DB: app
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
