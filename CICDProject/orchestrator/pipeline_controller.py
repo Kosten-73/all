@@ -3,7 +3,7 @@
 import requests
 import time
 
-JENKINS_URL = "http://localhost:8080"
+JENKINS_URL = "http://localhost:8081"
 JOB_NAME = "microservice-pipeline"
 TOKEN = "your_token"
 
